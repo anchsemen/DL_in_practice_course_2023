@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  telegram-bot:
+    build:
+     context: telegram-gateway
+    command: ["npm", "run", "dev"]
+    volumes:
+      - ./telegram-gateway/src:/usr/src/app/src
+  
+  cv-service:
+    build:
+     context: detect_of_traffic_signs

@@ -1,0 +1,9 @@
+.env
+runs/detect/predict/video_frames/*
+ml-venv
+
+__pycache__
+
+*.jpg
+*.avi
+*.mp4

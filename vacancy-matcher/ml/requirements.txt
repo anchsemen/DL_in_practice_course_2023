@@ -1,0 +1,10 @@
+ultralytics~=8.0.212
+fastapi==0.104.1
+pandas
+numpy
+nltk
+pymorphy3
+transformers
+torch
+scikit-learn
+shutil

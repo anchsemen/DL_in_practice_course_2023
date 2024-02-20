@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  telegram-bot:
+    env_file:
+      - .env
+    ports:
+      - ${BOT_PORT}:${BOT_PORT}
+    environment:
+    - ${BOT_TOKEN}
+    - ${BOT_PORT}
+    - ${ML_HOST_URL}
+  
+  cv-service:
+    env_file:
+      - .env
+    ports:
+      - 8000:8000

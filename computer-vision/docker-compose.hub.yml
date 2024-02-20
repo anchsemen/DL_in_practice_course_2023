@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  telegram-bot:
+    image: danyakladnitsky/recsys2023.telegram-gateway:latest
+    pull_policy: always
+    command: ["npm", "run", "start:dev"]
